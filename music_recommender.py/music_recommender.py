@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the clustered dataset
-df = pd.read_csv("'/Users/andreathomas/Desktop/Tableau dashboard/final_df.csv'")
+df = pd.read_csv('/Users/andreathomas/Desktop/Tableau dashboard/final_df.csv')
 
 def get_recommendations(artist_name):
     # Find all songs by the artist (case-insensitive)
