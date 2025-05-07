@@ -1,32 +1,26 @@
 import streamlit as st
 from music_recommender import get_recommendations
 
-# Page configuration
+# Set basic Streamlit page config
 st.set_page_config(page_title="Music Recommender", page_icon="🎧", layout="centered")
 
-# CSS: lighter background with better contrast
+# Minimal styling for a clean white theme
 st.markdown(
     """
     <style>
     body {
-        background-image: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1740&q=80');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        background-color: white;
         font-family: 'Helvetica Neue', sans-serif;
     }
     .stApp {
-        background-color: rgba(0,0,0,0);
+        background-color: white;
     }
     .main-container {
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: white;
         padding: 2rem;
-        margin-top: 4rem;
-        border-radius: 12px;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
         max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 4rem auto;
+        border-radius: 10px;
     }
     </style>
     """,
@@ -47,3 +41,4 @@ if artist:
         st.markdown(f"- {rec}")
 
 st.markdown("</div>", unsafe_allow_html=True)
+
